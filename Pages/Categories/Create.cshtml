@@ -1,0 +1,23 @@
+﻿@page
+@model AbbWeb_MVC.Pages.Categories.CreateModel
+<form method="post">
+    <div class="border-bottom pd-2">
+        <h2 class="text-primary pl-3">Create Category</h2>
+
+    </div>
+    <div asp-validation-summary="All"></div>
+    <div class="mb-3">
+        Name:
+        <label asp-for="@Model.Category.Name"></label>
+        <input asp-for ="@Model.Category.Name" class="form-control" />
+        <span asp-validation-for="@Model.Category.Name" class="text-danger"></span>
+
+    </div>
+    <dib class="mb-3">
+        Dispay Order:
+        <label asp-for="@Model.Category.DisplayOrder"></label>
+        <input asp-for="@Model.Category.DisplayOrder" class="form-control" />
+        <span asp-validation-for="@Model.Category.DisplayOrder" class="text-danger"></span>
+    </dib>
+    <button type="submit" class="btn btn-primary btn" >Create</button>
+</form>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AbbWeb_MVC.props" />
+</Project>
